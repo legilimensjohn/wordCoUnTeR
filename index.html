@@ -4,38 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Program Word Counter</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 900px;
-            height: 500px;
-            margin: auto;
-            background-color: blanchedalmond;
-            top: 15%;
-            position: relative;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        body {
-            background-color: grey;
-            height: 100vh;
-            width: 100dvw;
-        }
-
-
-
-
-
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Word Counter</h1>
+        <textarea id="textArea" cols="50" rows="10"></textarea><br><br>
+        <label for="char">Characters: </label>
+        <input type="text" id="char" readonly><br><br>
+        <label for="word">Words: </label>
+        <input type="text" id="word" readonly>
+    </div>
+    <script src="node.js"></script>
 </body>
 </html>
